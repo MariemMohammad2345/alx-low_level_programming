@@ -6,8 +6,8 @@
  *
  * @c: the character to print
  *
- * Return : 1 (success), -1 (error)
- */
+ * Return: 1 (success), -1 (error)
+*/
 
 int _putchar(char c)
 {
