@@ -8,13 +8,13 @@
  * Return: 1 if true, 0 if false
  */
 
-	int  isLower(char c)
-	{
-		return (c >= 97 && c <= 122);
-	}
+int isLower(char c)
+{
+	return (c >= 97 && c <= 122);
+}
 
 /**
- *  * isDelimiter - Determines whether ascii is a delimiter
+ * isDelimiter - Determines whether ascii is a delimiter
  *
  * @c: Character
  *
@@ -31,7 +31,8 @@ int isDelimiter(char c)
 			return (1);
 
 	return (0);
-	}
+}
+
 /**
  * cap_string - Capitalizes all words of a string
  *
@@ -59,4 +60,4 @@ char *cap_string(char *s)
 		s++;
 	}
 	return (ptr);
-i}
+}
