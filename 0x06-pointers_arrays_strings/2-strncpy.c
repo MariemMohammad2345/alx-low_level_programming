@@ -12,8 +12,8 @@
  * Return: Pointer to dest
  */
 
-	char *_strncpy(char *dest, char *src, int n)
-	{
+char *_strncpy(char *dest, char *src, int n)
+{
 	int i = 0;
 
 	while (src[i] != '\0' && i < n)
@@ -22,5 +22,11 @@
 		i++;
 	}
 
-	return (dest);
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
 	}
+
+	return (dest);
+}
