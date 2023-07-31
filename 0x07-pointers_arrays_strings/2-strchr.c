@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _Strch - Loctes a character in a string
+ *_strchr - Loctes a character in a string
  *
  * @s: the string to check
  *
@@ -11,8 +11,8 @@
  *
  */
 
-char *_strchr(char *s, char c)
-{
+	char *_strchr(char *s, char c)
+	{
 	while (*s)
 	{
 		s++;
