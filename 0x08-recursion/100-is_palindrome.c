@@ -41,3 +41,18 @@ int last_index(char *s)
 
 	return (n);
 }
+
+/**
+ * is_palindrome - Check if a string is a palindrome
+ *
+ * @s: String to check
+ *
+ * Return: 0 or 1
+ */
+
+int is_palindrome(char *s)
+{
+	int end = last_index(s);
+
+	return (check(s, 0, end - 1, end % 2));
+}
