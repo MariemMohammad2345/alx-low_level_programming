@@ -1,41 +1,16 @@
-#include "main.h"
 #include <stdio.h>
 
-void print_string(char *str);
-
 /**
- * main - Prints its name
+ * main - prints its name, followed by a new line.
+ * @argc: argument count
+ * @argv: arguments
  *
- * @argc: Length of argv
- *
- * @argv: Arrays of strings of the program arguments
- *
- * Return: 0, Success
+ * Return: 0
  */
-
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char **argv)
 {
-	print_string(argv[0]);
-	_putchar('\n');
+	(void)argc;
 
+	printf("%s\n", argv[0]);
 	return (0);
-}
-
-/**
- * print_string - Prints all char of a string
- *
- * @str: Pointer to string
- *
- * Return: void
- */
-
-void print_string(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-	{
-		_putchar(str[i]);
-		i++;
-	}
 }
